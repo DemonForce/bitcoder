@@ -17,6 +17,8 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 15px;
 }
 
 html,
@@ -24,12 +26,13 @@ body {
   background-color: black;
   width: 100%;
   height: 100%;
-  background-image: url("http://res.cloudinary.com/adamlancon/image/upload/v1506452186/untitled_10_kpjcmn.svg");
+  background-image: url("fondo.jpg");
   background-size: cover;
   overflow: hidden;
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 
 /*IMAGES FOR FRONT PAGE AND KEYFRAMES*/
 
@@ -81,7 +84,7 @@ body {
 
 .littleAdam {
   /*BOX CONTAINING LITTLE ADAMS*/
-  grid-area: 2/6/3/7;
+  grid-area: 2/6/4/7;
   z-index: 1;
   height: 100%;
   width: 100%;
@@ -91,7 +94,7 @@ body {
 
 #littleAdam,
 #littleAdam2 {
-  grid-area: 1/1/3/3;
+  grid-area: 6/1/1/2;
   min-height: 100px;
   max-height: 100px;
   align-self: end;
@@ -100,6 +103,12 @@ body {
 
 #littleAdam2 {
   animation: wind 0.5s cubic-bezier(1, 0.5, 0.5, 1) infinite;
+}
+
+#luna {
+  grid-area: 1/2/6/5;
+  height: 140px;
+  width: 140px;
 }
 
 .adam {
@@ -116,9 +125,9 @@ img {
 }
 
 .building {
-  height: 100%;
-  width: 100%;
-  grid-area: 2/6/6/7;
+  height: 150%;
+  width: 150%;
+  grid-area: 2/6/6/6;
   justify-self: end;
 }
 
@@ -143,7 +152,7 @@ img {
 }
 
 .titleMusic {
-  color: #ff0000;
+  color: #ffffff;
 }
 
 .titleBox>p {
