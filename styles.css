@@ -19,7 +19,8 @@ footer {
   width: 100%;
 }
 
-html, body {
+html,
+body {
   background-color: black;
   width: 100%;
   height: 100%;
@@ -33,26 +34,49 @@ html, body {
 /*IMAGES FOR FRONT PAGE AND KEYFRAMES*/
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
 }
+
 @keyframes blink-caret {
-  50% { border-color: transparent; }
+  50% {
+    border-color: transparent;
+  }
 }
 
 @keyframes typing2 {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
 }
 
 @keyframes blink {
-  from { color: red }
-  to { color: transparent }
+  from {
+    color: red
+  }
+
+  to {
+    color: transparent
+  }
 }
 
 @keyframes wind {
-  from { opacity: 1 }
-  to { opacity: 0 }
+  from {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0
+  }
 }
 
 .littleAdam {
@@ -65,7 +89,8 @@ html, body {
   grid-template: 50% 50%/ 50% 50%;
 }
 
-#littleAdam, #littleAdam2 {
+#littleAdam,
+#littleAdam2 {
   grid-area: 1/1/3/3;
   min-height: 100px;
   max-height: 100px;
@@ -96,6 +121,7 @@ img {
   grid-area: 2/6/6/7;
   justify-self: end;
 }
+
 /*-----------------------------------START OF FRONT PAGE------------------------------------*/
 
 .frontPage {
@@ -109,16 +135,20 @@ img {
   grid-area: 1/2/2/5;
   height: 100%;
   width: 100%;
-  color: #259dff;
+  color: #44da31;
   font-family: "Press Start 2P";
   white-space: nowrap;
   margin-left: 20%;
   margin-bottom: 10%;
 }
 
-.titleBox > p {
+.titleMusic {
+  color: #ff0000;
+}
+
+.titleBox>p {
   margin-top: 90px;
-  font-size: 40px;
+  font-size: 45px;
 }
 
 /*----------------------START FOR CLICKABLE SELECTORS--------------*/
@@ -131,7 +161,10 @@ img {
   font-size: 25px;
 }
 
-.about, .skills, .projects, .contact {
+.about,
+.skills,
+.projects,
+.contact {
   height: 100%;
   width: 100%;
   color: white;
@@ -144,20 +177,27 @@ i {
   color: transparent;
 }
 
-.about:hover > p, .skills:hover > p, .projects:hover > p, .contact:hover > p {
+.about:hover>p,
+.skills:hover>p,
+.projects:hover>p,
+.contact:hover>p {
   font-weight: bold;
-  color: #259dff;
+  color: #6f00ff;
 
   cursor: pointer;
 }
 
-.about:hover > p > i, .skills:hover > p > i, .projects:hover > p > i, .contact:hover > p > i {
+.about:hover>p>i,
+.skills:hover>p>i,
+.projects:hover>p>i,
+.contact:hover>p>i {
   color: white;
   margin-right: 10px;
   font-size: 30px;
   animation: blink 1s steps(2, end) infinite;
   font-size: 40px;
 }
+
 /*----------------------END OF FRONT PAGE AND CLICKABLE SELECTORS--------------*/
 
 #adam2 {
@@ -167,42 +207,41 @@ i {
 /*-----------------------------RESPONSIVE----------------------------------------------*/
 
 @media screen and (max-width: 750px) {
-  .titleBox > img {
-      width: 400px;
+  .titleBox>img {
+    width: 400px;
   }
 
-  .titleBox > p {
-      font-size: 17.5px;
+  .titleBox>p {
+    font-size: 17.5px;
   }
 
   .selectors {
-      font-size: 16px;
+    font-size: 16px;
   }
 
 }
 
 @media screen and (max-width: 500px) {
 
-  .titleBox > img {
-      width: 300px;
+  .titleBox>img {
+    width: 300px;
   }
 
-  .titleBox > p {
-      font-size: 13px;
+  .titleBox>p {
+    font-size: 13px;
   }
 
   .selectors {
-      font-size: 16px;
-      grid-area: 2/1/5/7;
+    font-size: 16px;
+    grid-area: 2/1/5/7;
   }
 
 }
 
 @media screen and (max-width: 375px) {
   .selectors {
-      grid-area: 2/2/3/3;
-      margin-top: 50px;
+    grid-area: 2/2/3/3;
+    margin-top: 50px;
   }
 
 }
-
