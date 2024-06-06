@@ -106,7 +106,7 @@ body {
 }
 
 #luna {
-  grid-area: 1/2/6/5;
+  grid-area: 1/6/6/5;
   height: 40px;
   width: 40px;
 }
