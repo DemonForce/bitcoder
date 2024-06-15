@@ -248,3 +248,19 @@ i {
   }
 
 }
+
+.binary-title {
+  font-size: 3em;
+  margin: 10px 0;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.binary-title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.binary-title span {
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
