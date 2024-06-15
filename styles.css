@@ -110,8 +110,8 @@ img {
 }
 
 .building {
-  height: 150%;
-  width: 145%;
+  height: 190%;
+  width: 160%;
   grid-area: 2/6/6/6;
   justify-self: end;
 }
@@ -152,7 +152,7 @@ img {
   width: 100%;
   height: 100%;
   display: grid;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .about,
@@ -225,6 +225,8 @@ i {
   }
 
   .building {
+    height: 150%;
+    width: 145%;
     margin-top: 12.3vh;
   }
 
