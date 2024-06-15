@@ -64,7 +64,7 @@ body {
 
 @keyframes blink {
   from {
-    color: red
+    color: #ff1414
   }
 
   to {
@@ -98,19 +98,11 @@ body {
   min-height: 100px;
   max-height: 100px;
   align-self: end;
-  margin-bottom: 45px;
+  margin-bottom: -7vh;
 }
 
 #littleAdam2 {
   animation: wind 0.5s cubic-bezier(1, 0.5, 0.5, 1) infinite;
-}
-
-.adam {
-  /*box containing image*/
-  display: none;
-  height: 100%;
-  width: 100%;
-  grid-area: 3/3/6/5;
 }
 
 img {
@@ -123,6 +115,7 @@ img {
   width: 150%;
   grid-area: 2/6/6/6;
   justify-self: end;
+  margin-top: 12.3vh;
 }
 
 /*-----------------------------------START OF FRONT PAGE------------------------------------*/
@@ -131,7 +124,7 @@ img {
   display: grid;
   height: 100%;
   width: 100%;
-  grid-template: 1fr 150px 55px 55px 55px / 1fr 1fr 1fr 1fr 1fr 290px;
+  grid-template: 2fr 150px 55px 55px 55px / 1fr 1fr 1fr 1fr 1fr 290px;
 }
 
 .titleBox {
@@ -176,7 +169,7 @@ img {
 }
 
 i {
-  margin-right: -5px;
+  margin-right: 1px;
   color: transparent;
 }
 
@@ -186,7 +179,6 @@ i {
 .contact:hover>p {
   font-weight: bold;
   color: #6f00ff;
-
   cursor: pointer;
 }
 
@@ -195,10 +187,10 @@ i {
 .projects:hover>p>i,
 .contact:hover>p>i {
   color: white;
-  margin-right: 10px;
+  margin-right: 2.5px;
   font-size: 30px;
   animation: blink 1s steps(2, end) infinite;
-  font-size: 40px;
+  font-size: 3.5vh;
 }
 
 /*----------------------END OF FRONT PAGE AND CLICKABLE SELECTORS--------------*/
@@ -210,68 +202,70 @@ i {
 /*-----------------------------RESPONSIVE----------------------------------------------*/
 
 @media screen and (max-width: 750px) {
-  .titleBox>img {
-    width: 400px;
-  }
-
-  .titleBox>p {
-    font-size: 20px;
-  }
-
-  .binary-title {
-    font-size: 10vw;
-  }
 
   .selectors {
-    font-size: 12px;
+    font-size: 5vw;
+  }
+
+  .about:hover>p>i,
+  .skills:hover>p>i,
+  .projects:hover>p>i,
+  .contact:hover>p>i {
+    margin-right: 2.5px;
+    font-size: 3.5vh;
+  }
+
+  .building {
+    margin-top: 12.3vh;
+  }
+
+  #littleAdam,
+  #littleAdam2 {
+    margin-bottom: -7vh;
   }
 
 }
 
-@media screen and (max-width: 500px) {
-
-  .titleBox>img {
-    width: 300px;
-  }
-
-  .titleBox>p {
-    font-size: 15px;
-  }
-
-  .binary-title {
-    font-size: 10vw;
-  }
-
-  .selectors {
-    font-size: 10px;
-    grid-area: 2/1/5/7;
-  }
-
-}
+@media screen and (max-width: 500px) {}
 
 @media screen and (max-width: 375px) {
   .selectors {
-    grid-area: 2/2/3/3;
-    margin-top: 50px;
+    grid-area: 2/2/2/2;
+    margin-top: 3vh;
+    margin-left: 2.1vh;
   }
 
-  .binary-title {
-    font-size: 10vw;
+  .about:hover>p>i,
+  .skills:hover>p>i,
+  .projects:hover>p>i,
+  .contact:hover>p>i {
+    margin-right: 2.5px;
+    font-size: 3.5vh;
   }
 
+  .building {
+    margin-top: 12.3vh;
+  }
+
+  #littleAdam,
+  #littleAdam2 {
+    margin-bottom: -7vh;
+  }
 }
 
 .binary-title {
-  font-size: 3vw;
+  font-size: 8vw;
   margin: 10px 0;
   opacity: 0;
   transform: translateY(-50px);
   transition: opacity 0.5s, transform 0.5s;
 }
+
 .binary-title.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
 .binary-title span {
   display: inline-block;
   transition: all 0.2s ease-in-out;
