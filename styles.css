@@ -33,16 +33,15 @@ body {
   background-repeat: no-repeat;
 }
 
-
 /*IMAGES FOR FRONT PAGE AND KEYFRAMES*/
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 
   to {
-    width: 100%
+    width: 100%;
   }
 }
 
@@ -54,31 +53,31 @@ body {
 
 @keyframes typing2 {
   from {
-    width: 0
+    width: 0;
   }
 
   to {
-    width: 100%
+    width: 100%;
   }
 }
 
 @keyframes blink {
   from {
-    color: red
+    color: red;
   }
 
   to {
-    color: transparent
+    color: transparent;
   }
 }
 
 @keyframes wind {
   from {
-    opacity: 1
+    opacity: 1;
   }
 
   to {
-    opacity: 0
+    opacity: 0;
   }
 }
 
@@ -149,9 +148,9 @@ img {
   color: #ffffff;
 }
 
-.titleBox>p {
-  margin-top: 90px;
-  font-size: 45px;
+.titleBox > p {
+  margin-top: 10vh; /* Ajuste del margen superior proporcional a la altura de la ventana gráfica */
+  font-size: 4vw; /* Ajuste del tamaño de fuente proporcional al ancho de la ventana gráfica */
 }
 
 /*----------------------START FOR CLICKABLE SELECTORS--------------*/
@@ -161,7 +160,7 @@ img {
   width: 100%;
   height: 100%;
   display: grid;
-  font-size: 25px;
+  font-size: 2vw; /* Ajuste del tamaño de fuente proporcional al ancho de la ventana gráfica */
 }
 
 .about,
@@ -180,20 +179,19 @@ i {
   color: transparent;
 }
 
-.about:hover>p,
-.skills:hover>p,
-.projects:hover>p,
-.contact:hover>p {
+.about:hover > p,
+.skills:hover > p,
+.projects:hover > p,
+.contact:hover > p {
   font-weight: bold;
   color: #6f00ff;
-
   cursor: pointer;
 }
 
-.about:hover>p>i,
-.skills:hover>p>i,
-.projects:hover>p>i,
-.contact:hover>p>i {
+.about:hover > p > i,
+.skills:hover > p > i,
+.projects:hover > p > i,
+.contact:hover > p > i {
   color: white;
   margin-right: 10px;
   font-size: 30px;
@@ -210,35 +208,32 @@ i {
 /*-----------------------------RESPONSIVE----------------------------------------------*/
 
 @media screen and (max-width: 750px) {
-  .titleBox>img {
+  .titleBox > img {
     width: 400px;
   }
 
-  .titleBox>p {
-    font-size: 20px;
+  .titleBox > p {
+    font-size: 5vw; /* Ajuste del tamaño de fuente proporcional al ancho de la ventana gráfica */
   }
 
   .selectors {
-    font-size: 12px;
+    font-size: 4vw; /* Ajuste del tamaño de fuente proporcional al ancho de la ventana gráfica */
   }
-
 }
 
 @media screen and (max-width: 500px) {
-
-  .titleBox>img {
+  .titleBox > img {
     width: 300px;
   }
 
-  .titleBox>p {
-    font-size: 15px;
+  .titleBox > p {
+    font-size: 6vw; /* Ajuste del tamaño de fuente proporcional al ancho de la ventana gráfica */
   }
 
   .selectors {
-    font-size: 10px;
+    font-size: 5vw; /* Ajuste del tamaño de fuente proporcional al ancho de la ventana gráfica */
     grid-area: 2/1/5/7;
   }
-
 }
 
 @media screen and (max-width: 375px) {
@@ -246,7 +241,6 @@ i {
     grid-area: 2/2/3/3;
     margin-top: 50px;
   }
-
 }
 
 .binary-title {
@@ -256,10 +250,12 @@ i {
   transform: translateY(-50px);
   transition: opacity 0.5s, transform 0.5s;
 }
+
 .binary-title.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
 .binary-title span {
   display: inline-block;
   transition: all 0.2s ease-in-out;
