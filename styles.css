@@ -205,23 +205,6 @@ i {
     font-size: 4.5vw;
   }
 
-  .about:hover>p>i,
-  .skills:hover>p>i,
-  .projects:hover>p>i,
-  .contact:hover>p>i {
-    margin-right: 2.5px;
-    font-size: 3.5vh;
-  }
-
-  .building {
-    margin-top: 12.3vh;
-  }
-
-  #littleAdam,
-  #littleAdam2 {
-    margin-bottom: -7vh;
-  }
-
 }
 
 @media screen and (max-width: 500px) {}
@@ -249,10 +232,18 @@ i {
   #littleAdam2 {
     margin-bottom: -7vh;
   }
+
+  .binary-title {
+    font-size: 8vw;
+  }
+
+  #bit,#bit2 {
+    font-size: 8vw;
+  }
 }
 
 .binary-title {
-  font-size: 8vw;
+  font-size: 3vw;
   margin: 10px 0;
   opacity: 0;
   transform: translateY(-50px);
