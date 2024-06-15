@@ -148,6 +148,7 @@ img {
 /*----------------------START FOR CLICKABLE SELECTORS--------------*/
 
 .selectors {
+  z-index: 1;
   grid-area: 2/3/6/7;
   width: 100%;
   height: 100%;
@@ -228,6 +229,7 @@ i {
     height: 150%;
     width: 145%;
     margin-top: 12.3vh;
+    z-index: 0;
   }
 
   #littleAdam,
