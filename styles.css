@@ -98,7 +98,6 @@ body {
   min-height: 100px;
   max-height: 100px;
   align-self: end;
-  margin-bottom: -7vh;
 }
 
 #littleAdam2 {
@@ -112,10 +111,9 @@ img {
 
 .building {
   height: 150%;
-  width: 150%;
+  width: 145%;
   grid-area: 2/6/6/6;
   justify-self: end;
-  margin-top: 12.3vh;
 }
 
 /*-----------------------------------START OF FRONT PAGE------------------------------------*/
@@ -204,7 +202,7 @@ i {
 @media screen and (max-width: 750px) {
 
   .selectors {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
 
   .about:hover>p>i,
@@ -231,15 +229,15 @@ i {
 @media screen and (max-width: 375px) {
   .selectors {
     grid-area: 2/2/2/2;
-    margin-top: 3vh;
-    margin-left: 2.1vh;
+    margin-top: 3.4vh;
+    margin-left: 1.4vh;
   }
 
   .about:hover>p>i,
   .skills:hover>p>i,
   .projects:hover>p>i,
   .contact:hover>p>i {
-    margin-right: 2.5px;
+    margin-right: 1px;
     font-size: 3.5vh;
   }
 
