@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   function detectDevice() {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 768 && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       document.body.classList.add("mobile");
     } else {
       document.body.classList.remove("mobile");
@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   window.addEventListener("resize", detectDevice);
+  window.addEventListener("orientationchange", detectDevice);
   detectDevice();
 
   const titleElements = document.querySelectorAll(".binary-title");
@@ -67,3 +68,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(showTitles, 500);
 });
+
