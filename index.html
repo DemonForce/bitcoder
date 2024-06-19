@@ -2,12 +2,8 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Autoajustable</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,73 +12,44 @@
       href="https://fonts.googleapis.com/css?family=Press+Start+2P"
       rel="stylesheet"
     />
-    
     <link rel="stylesheet" href="styles.css" />
-
-    <title>BitCoder</title>
   </head>
   <body>
-    <main>
-      <div class="frontPage">
-        <!----------------TITLE------------------------------->
-        <div class="titleBox">
-          <div class="titleMusic">
-            <p style="font-size: 15px">Music</p>
-            <input
-              type="range"
-              min="0"
-              max="1"
-              step="0.1"
-              value="0"
-              id="volumeControl"
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Menu</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content">
+      <div class="title-section">
+        <div id="bit" class="binary-title">BITCODER</div>
+        <div id="bit2" class="binary-title">DEVELOPER</div>
+      </div>
+      <div class="grid-section">
+        <div class="left-column"></div>
+        <div class="center-column"></div>
+        <div class="right-column">
+          <div class="littleAdam">
+            <img
+              id="building"
+              src="http://res.cloudinary.com/adamlancon/image/upload/v1506374679/untitled_8_ytd0ph.svg"
             />
-          </div>
-          <br><br><br>
-          <div id="bit" class="binary-title">BITCODER</div>
-          <!-- <div class="binary-title">FULL STACK</div> -->
-          <div id="bit2" class="binary-title">DEVELOPER</div>
-        </div>
-        <!-------------LANDING PAGE-------------------------->
-        <div class="littleAdam">
-          <img
-            id="littleAdam"
-            src="http://res.cloudinary.com/adamlancon/image/upload/v1506365854/untitled_6_ubbrnf.svg"
-          />
-          <img
-            id="littleAdam2"
-            src="http://res.cloudinary.com/adamlancon/image/upload/v1506368157/untitled_7_um0bkp.svg"
-          />
-        </div>
-        
-        <div class="building">
-          <img
-            id="building"
-            src="http://res.cloudinary.com/adamlancon/image/upload/v1506374679/untitled_8_ytd0ph.svg"
-          />
-        </div>
-
-        <div class="selectors">
-          <div class="about">
-            <p><i class="fa fa-caret-right" aria-hidden="true"></i>About</p>
-          </div>
-          <div class="skills">
-            <p><i class="fa fa-caret-right" aria-hidden="true"></i>Skills</p>
-          </div>
-          <div class="projects">
-            <p><i class="fa fa-caret-right" aria-hidden="true"></i>Projects</p>
-          </div>
-          <div class="contact">
-            <p><i class="fa fa-caret-right" aria-hidden="true"></i>Contact</p>
+            <img
+              id="littleAdam"
+              src="http://res.cloudinary.com/adamlancon/image/upload/v1506365854/untitled_6_ubbrnf.svg"
+            />
+            <img
+              id="littleAdam2"
+              src="http://res.cloudinary.com/adamlancon/image/upload/v1506368157/untitled_7_um0bkp.svg"
+            />
           </div>
         </div>
       </div>
-      <audio id="backgroundAudio" loop>
-        <source src="beat.mp3" type="audio/mp3" />
-        Your browser does not support the audio element.
-      </audio>
     </main>
     <footer>
-      <p>&copy; 2024 BITCODER</p>
+      <p>&copy; BITCODER 2024</p>
     </footer>
     <script src="index.js"></script>
   </body>
