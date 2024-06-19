@@ -213,13 +213,13 @@ footer {
   #littleAdam2 {
     width: 50px;
     position: absolute;
-    bottom: 23.5vw;
-    right: 10.5vw;
+    bottom: 23vw;
+    right: 11vw;
     z-index: 1;
   }
 
   footer {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
 
 }
