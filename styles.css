@@ -90,7 +90,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .binary-title {
@@ -191,11 +191,11 @@ footer {
   }
 
   footer {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 
-@media (orientation: landscape) and (hover: none) {
+@media (orientation: landscape) and (any-pointer: coarse) {
 
   .binary-title {
     font-size: 2vw;
@@ -213,7 +213,7 @@ footer {
   #littleAdam2 {
     width: 50px;
     position: absolute;
-    bottom: 15.5vw;
+    bottom: 20.5vw;
     right: 10.5vw;
     z-index: 1;
   }
