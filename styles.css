@@ -191,14 +191,14 @@ footer {
   }
 
   footer {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 }
 
-@media (orientation: landscape) and (max-width: 768px) and (hover: none) {
+@media (orientation: landscape) and (hover: none) {
 
   .binary-title {
-    font-size: 6vw;
+    font-size: 4vw;
   }
 
   #building {
@@ -213,13 +213,13 @@ footer {
   #littleAdam2 {
     width: 50px;
     position: absolute;
-    bottom: 28vw;
-    right: 12vw;
+    bottom: 20.5vw;
+    right: 10.5vw;
     z-index: 1;
   }
 
   footer {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 
 }
