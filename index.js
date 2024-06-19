@@ -53,7 +53,10 @@ document.addEventListener("DOMContentLoaded", function () {
         animateCharacter(charElement, getRandomBinary(), 20);
       });
       charElement.addEventListener("touchend", () => {
-        animateCharacter(charElement, characters[index], 20);
+        // Restablecer el caracter correcto al finalizar el toque
+        setTimeout(() => {
+          animateCharacter(charElement, characters[index], 20);
+        }, 200); // Ajustar el tiempo según sea necesario
       });
     });
   }
