@@ -175,19 +175,15 @@ footer {
 
   #building {
     width: 97vw;
-    position: absolute;
     bottom: -1vw;
     right: 1vw;
-    z-index: 0;
   }
 
   #littleAdam,
   #littleAdam2 {
     width: 21vw;
-    position: absolute;
     bottom: 76vw;
     right: 35vw;
-    z-index: 1;
   }
 
   footer {
@@ -203,19 +199,15 @@ footer {
 
   #building {
     width: 220px;
-    position: absolute;
     bottom: -1vw;
     right: 1vw;
-    z-index: 0;
   }
 
   #littleAdam,
   #littleAdam2 {
     width: 50px;
-    position: absolute;
     bottom: 23vw;
     right: 11vw;
-    z-index: 1;
   }
 
   footer {
