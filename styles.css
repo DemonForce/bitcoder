@@ -150,7 +150,7 @@ footer {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (orientation: portrait) and (any-pointer: coarse) {
   body {
     text-align: center;
     white-space: normal;
