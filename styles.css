@@ -217,8 +217,12 @@ footer {
     align-items: center;
   }
 
+  .binary-title {
+    font-size: 6vw;
+  }
+
   #building {
-    width: 250px;
+    width: 220px;
     position: absolute;
     bottom: -1vw;
     right: 1vw;
@@ -227,11 +231,14 @@ footer {
 
   #littleAdam,
   #littleAdam2 {
-    width: 55px;
+    width: 50px;
     position: absolute;
-    bottom: 23vw;
+    bottom: 28vw;
     right: 12vw;
     z-index: 1;
   }
 
+  footer {
+    font-size: 2vw;
+  }
 }
