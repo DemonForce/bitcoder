@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   function detectDevice() {
-    if (window.innerWidth <= 768 && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       document.body.classList.add("mobile");
     } else {
       document.body.classList.remove("mobile");
