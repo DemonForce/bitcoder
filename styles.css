@@ -196,26 +196,6 @@ footer {
 }
 
 @media (orientation: landscape) and (max-width: 768px) and (hover: none) {
-  body {
-    flex-direction: row;
-  }
-
-  main {
-    flex-direction: row;
-  }
-
-  .grid-section {
-    flex-direction: row;
-  }
-
-  .left-column,
-  .center-column,
-  .right-column {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   .binary-title {
     font-size: 6vw;
@@ -241,4 +221,5 @@ footer {
   footer {
     font-size: 2vw;
   }
+
 }
