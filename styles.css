@@ -111,6 +111,10 @@ footer {
   transition: all 0.2s ease-in-out;
 }
 
+#bit3 {
+  font-size: 1vw;
+}
+
 .littleAdam {
   position: fixed;
   bottom: 1vw;
@@ -173,6 +177,10 @@ footer {
     font-size: 8vw;
   }
 
+  #bit3 {
+    font-size: 2vw;
+  }
+
   #building {
     width: 97vw;
     bottom: -1vw;
@@ -195,6 +203,10 @@ footer {
 
   .binary-title {
     font-size: 4vw;
+  }
+
+  #bit3 {
+    font-size: 1.3vw;
   }
 
   #building {
