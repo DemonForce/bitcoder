@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -49,6 +50,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Centrar el contenido verticalmente */
   padding: 20px;
 }
 
@@ -72,7 +74,9 @@ main {
 }
 
 .center-column {
-  position: relative;
+  display: flex;
+  justify-content: center; /* Centrar el contenido horizontalmente */
+  align-items: center; /* Centrar el contenido verticalmente */
 }
 
 footer {
@@ -90,7 +94,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .binary-title {
@@ -153,7 +157,115 @@ footer {
   }
 }
 
-/* Media Queries */
+.selectors {
+  display: flex;
+  flex-direction: column-reverse; /* Alinea de arriba hacia abajo */
+  justify-content: center; /* Centrar el contenido verticalmente */
+  align-items: left; /* Centrar el contenido horizontalmente */
+  width: 100%;
+  height: 100%;
+  font-size: 2vw;
+  z-index: 50;
+}
+
+.about,
+.skills,
+.projects,
+.contact {
+  margin: 1.7vw 7.5vw; /* Reducir el margen entre los elementos */
+  width: auto; /* Ajustar el ancho según el contenido */
+  color: rgb(255, 255, 255);
+  font-family: "Press Start 2P";
+  text-align: left;
+}
+
+i {
+  margin-right: 1px;
+  color: transparent;
+}
+
+.about:hover>p,
+.skills:hover>p,
+.projects:hover>p,
+.contact:hover>p {
+  font-weight: bold;
+  color: #ae00ff;
+  cursor: pointer;
+  text-shadow:
+    -1.5px -1.5px 0 yellow,
+    1.5px -1.5px 0 yellow,
+    -1.5px 1.5px 0 yellow,
+    1.5px 1.5px 0 yellow;
+}
+
+.about:hover>p>i,
+.skills:hover>p>i,
+.projects:hover>p>i,
+.contact:hover>p>i {
+  color: #420000;
+  margin-right: 7px;
+  animation: blink 1s steps(2, end) infinite;
+  font-size: 2.8vw;
+}
+
+@keyframes blink {
+  from {
+    color: #ff0000
+  }
+
+  to {
+    color: transparent
+  }
+}
+
+#nave {
+  z-index: 1;
+  width: 12vw;
+  height: 12vw;
+  position: absolute;
+  margin-top: 220px;
+  left: 100;
+  animation: levitar 3s infinite ease-in-out;
+}
+
+@keyframes levitar {
+  0% {
+      top: 0;
+  }
+  50% {
+      top: -1.5vw;
+  }
+  100% {
+      top: 0;
+  }
+}
+
+#vaca {
+  z-index: 1;
+  width: 3vw;
+  height: 2vw;
+  position: absolute;
+  margin-top: 670px;
+  left: 100;
+  animation: levitar2 12s infinite ease-in-out;
+}
+
+@keyframes levitar2 {
+  0% {
+      top: 1vw;
+      opacity: 100; /* Desaparecer al 100% */
+  }
+  50% {
+      top: -5vw;
+      opacity: 100; /* Desaparecer al 100% */
+  }
+  100% {
+      top: -12vw;
+      opacity: 0; /* Desaparecer al 100% */
+  }
+}
+
+
 @media (orientation: portrait) and (any-pointer: coarse) {
   body {
     text-align: center;
@@ -200,7 +312,6 @@ footer {
 }
 
 @media (orientation: landscape) and (any-pointer: coarse) {
-
   .binary-title {
     font-size: 4vw;
   }
@@ -225,5 +336,4 @@ footer {
   footer {
     font-size: 2vw;
   }
-
 }
