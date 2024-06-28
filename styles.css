@@ -296,7 +296,13 @@ i {
 
   .selectors {
     font-size: 3vh;
-    margin-top: 6.5vh;
+    margin-top: 7vh;
+  }
+
+  .fondo {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 110%;
+    padding: 10px;
   }
   
   .about,
@@ -375,4 +381,5 @@ i {
     margin-top: 45vh;
   }
 }
+
 
