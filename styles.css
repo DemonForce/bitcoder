@@ -174,14 +174,24 @@ footer {
 .contact {
   margin: 1.7vw 7.5vw; /* Reducir el margen entre los elementos */
   width: auto; /* Ajustar el ancho según el contenido */
-  color: rgb(255, 255, 255);
+  color: white;
   font-family: "Press Start 2P";
   text-align: left;
+  text-shadow:
+  -1.5px -1.5px 0 black,
+  1.5px -1.5px 0 black,
+  -1.5px 1.5px 0 black,
+  1.5px 1.5px 0 black;
 }
 
 i {
   margin-right: 1px;
   color: transparent;
+  text-shadow:
+  -1.5px -1.5px 0 transparent,
+  1.5px -1.5px 0 transparent,
+  -1.5px 1.5px 0 transparent,
+  1.5px 1.5px 0 transparent;
 }
 
 .about:hover>p,
@@ -192,17 +202,17 @@ i {
   color: #ae00ff;
   cursor: pointer;
   text-shadow:
-    -1px -1px 0 yellow,
-    1px -1px 0 yellow,
-    -1px 1px 0 yellow,
-    1px 1px 0 yellow;
+  -1.5px -1.5px 0 yellow,
+  1.5px -1.5px 0 yellow,
+  -1.5px 1.5px 0 yellow,
+  1.5px 1.5px 0 yellow;
 }
 
 .about:hover>p>i,
 .skills:hover>p>i,
 .projects:hover>p>i,
 .contact:hover>p>i {
-  color: #420000;
+  color: #300000;
   margin-right: 7px;
   animation: blink 1s steps(2, end) infinite;
   font-size: 2.8vw;
@@ -223,8 +233,8 @@ i {
   width: 12vw;
   height: 12vw;
   position: absolute;
-  margin-top: 220px;
-  left: 100;
+  margin-top: 35vh;
+  left: 10vw;
   animation: levitar 3s infinite ease-in-out;
 }
 
@@ -286,7 +296,7 @@ i {
 
   .selectors {
     font-size: 3vh;
-    margin-top: 5vh;
+    margin-top: 6.5vh;
   }
   
   .about,
@@ -341,7 +351,7 @@ i {
 
   .selectors {
     font-size: 2vw;
-    margin-top: -5vh;
+    margin-top: -15vh;
     margin-left: 5vw;
   }
   
@@ -349,7 +359,7 @@ i {
   .skills,
   .projects,
   .contact {
-    margin: 0.5vh 0.5vh; /* Reducir el margen entre los elementos */
+    margin: 1vh 0.5vh; /* Reducir el margen entre los elementos */
     width: 150%; /* Ajustar el ancho según el contenido */
   }
     
@@ -358,13 +368,11 @@ i {
   .projects:hover>p>i,
   .contact:hover>p>i {
     margin-right: 0.5vw;
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 
   #nave {
-
     margin-top: 45vh;
-
   }
 }
 
