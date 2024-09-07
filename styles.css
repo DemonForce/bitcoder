@@ -103,6 +103,17 @@ footer {
   opacity: 0;
   transform: translateY(-50px);
   transition: opacity 0.5s, transform 0.5s;
+  animation: neonFlicker 2s infinite alternate;
+}
+
+/* Animación de parpadeo para los títulos */
+@keyframes neonFlicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 2px yellow, 0 0 4px yellow, 0 0 5px yellow, 0 0 6px yellow;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
 }
 
 .binary-title.visible {
@@ -142,6 +153,7 @@ footer {
   right: 12vw;
   z-index: 1;
 }
+
 
 #littleAdam2 {
   animation: wind 0.5s cubic-bezier(1, 0.5, 0.5, 1) infinite;
@@ -201,31 +213,12 @@ i {
   font-weight: bold;
   color: #ae00ff;
   cursor: pointer;
-  text-shadow:
+  /* text-shadow:
   -1.5px -1.5px 0 yellow,
   1.5px -1.5px 0 yellow,
   -1.5px 1.5px 0 yellow,
-  1.5px 1.5px 0 yellow;
-}
-
-.about:hover>p>i,
-.skills:hover>p>i,
-.projects:hover>p>i,
-.contact:hover>p>i {
-  color: #300000;
-  margin-right: 7px;
-  animation: blink 1s steps(2, end) infinite;
-  font-size: 2.8vw;
-}
-
-@keyframes blink {
-  from {
-    color: #ff0000
-  }
-
-  to {
-    color: transparent
-  }
+  1.5px 1.5px 0 yellow; */
+  animation: neonFlicker 4s infinite alternate;
 }
 
 #nave {
@@ -233,7 +226,7 @@ i {
   width: 12vw;
   height: 12vw;
   position: absolute;
-  margin-top: 35vh;
+  margin-top: 50vh;
   left: 10vw;
   animation: levitar 3s infinite ease-in-out;
 }
@@ -380,6 +373,48 @@ i {
   #nave {
     margin-top: 45vh;
   }
+}
+
+/* Estilos base */
+.bg-show {
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+
+/* Estilos al hacer hover */
+.bg-show:hover {
+  background-color: rgba(0, 255, 0, 0.2); /* Cambia a un fondo verde transparente (ajústalo según tu necesidad) */
+}
+
+/* Estilo base del botón */
+#languageToggle {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #44da31;
+  padding: 10px 15px;
+  font-size: 0.7rem;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.5s ease, color 0.5s ease; /* Transición para el cambio suave */
+  font-family: "Press Start 2P";
+}
+
+/* Animación al pasar el cursor sobre el botón */
+#languageToggle:hover {
+  background-color: #44da31;
+  color: #000;
+  animation: neonFlicker 4s infinite alternate;
+}
+
+/* Definición de la animación de fondo */
+@keyframes bgAnimation {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #44da31;
+  }
+}
 }
 
 
