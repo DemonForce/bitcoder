@@ -391,8 +391,8 @@ i {
   background-color: transparent;
   color: #fff;
   border: 1px solid #44da31;
-  padding: 10px 15px;
-  font-size: 0.7rem;
+  padding: 8px 12px;
+  font-size: 0.5rem;
   cursor: pointer;
   border-radius: 3px;
   transition: background-color 0.5s ease, color 0.5s ease; /* Transición para el cambio suave */
