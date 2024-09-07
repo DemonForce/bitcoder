@@ -75,3 +75,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(showTitles, 500);
 });
+function toggleLanguage() {
+  const aboutText = document.getElementById('about-text');
+  const skillsText = document.getElementById('skills-text');
+  const projectsText = document.getElementById('projects-text');
+  const contactText = document.getElementById('contact-text');
+
+  if (aboutText.innerText === "About") {
+    aboutText.innerText = "Sobre mí";
+    skillsText.innerText = "Habilidades";
+    projectsText.innerText = "Proyectos";
+    contactText.innerText = "Contacto";
+  } else {
+    aboutText.innerText = "About";
+    skillsText.innerText = "Skills";
+    projectsText.innerText = "Projects";
+    contactText.innerText = "Contact";
+  }
+}
