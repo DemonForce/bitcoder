@@ -13,6 +13,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Aquí va el código CSS que te mostré antes */
+    </style>
   </head>
   <body>
     <header>
@@ -20,59 +23,77 @@
         <ul>
           <li><a href="#"></a></li>
         </ul>
+        <div style="position: absolute; top: 5px; right: 5px;">
+          <button id="languageToggle" onclick="toggleLanguage()">EN/ES</button>
+        </div>
       </nav>
     </header>
+
     <main id="main-content">
       <div class="title-section">
         <div id="bit" class="binary-title">BITCODER</div>
+        <div id="bit3" class="binary-title">FULL STACK</div>
         <div id="bit2" class="binary-title">DEVELOPER</div>
-        <div id="bit3" class="binary-title">The World Bit by Bit</div>
       </div>
-      
+
       <div class="grid-section">
         <div class="left-column">
-          <img id="nave" src="nave.gif">
+          <img id="nave" src="nave.gif" alt="Nave animada" />
         </div>
+
         <div class="center-column">
           <div class="selectors">
             <div class="fondo">
-            <div class="about">
-              <p><i class="fa fa-caret-right" aria-hidden="true"></i>About</p>
-            </div>
-            <div class="skills">
-              <p><i class="fa fa-caret-right" aria-hidden="true"></i>Skills</p>
-            </div>
-            <div class="projects">
-              <p><i class="fa fa-caret-right" aria-hidden="true"></i>Projects</p>
-            </div>
-            <div class="contact">
-              <p><i class="fa fa-caret-right" aria-hidden="true"></i>Contact</p>
+              <div class="about">
+                <p id="about-text">
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>About
+                </p>
+              </div>
+              <div class="skills">
+                <p id="skills-text">
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>Skills
+                </p>
+              </div>
+              <div class="projects">
+                <p id="projects-text">
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>Projects
+                </p>
+              </div>
+              <div class="contact">
+                <p id="contact-text">
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>Contact
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        </div>
+
         <div class="right-column">
           <div class="littleAdam">
             <img
               id="building"
               src="http://res.cloudinary.com/adamlancon/image/upload/v1506374679/untitled_8_ytd0ph.svg"
+              alt="Edificio animado"
             />
             <img
               id="littleAdam"
               src="http://res.cloudinary.com/adamlancon/image/upload/v1506365854/untitled_6_ubbrnf.svg"
+              alt="Personaje animado"
             />
             <img
               id="littleAdam2"
               src="http://res.cloudinary.com/adamlancon/image/upload/v1506368157/untitled_7_um0bkp.svg"
+              alt="Personaje animado 2"
             />
           </div>
         </div>
       </div>
     </main>
+
     <footer>
       <p>&copy; BITCODER 2024</p>
     </footer>
+
     <script src="index.js"></script>
   </body>
 </html>
-
