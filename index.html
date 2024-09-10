@@ -12,10 +12,7 @@
       href="https://fonts.googleapis.com/css?family=Press+Start+2P"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      /* Aquí va el código CSS que te mostré antes */
-    </style>
+    <link rel="stylesheet" href="{{ asset('styles.css') }}?v={{ rand() }}">
   </head>
   <body>
     <header>
@@ -94,6 +91,6 @@
       <p>&copy; BITCODER 2024</p>
     </footer>
 
-    <script src="index.js"></script>
+    <script href="{{ asset('index.js') }}?v={{ rand() }}"></script>
   </body>
 </html>
