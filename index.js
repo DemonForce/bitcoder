@@ -74,7 +74,29 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   setTimeout(showTitles, 500);
+
+  function loadDynamicCSS() {
+    if (!document.querySelector('link[href*="styles.css"]')) {
+      var cssLink = document.createElement("link");
+      cssLink.href = "styles.css?v=" + Math.floor(Math.random() * 1000);
+      cssLink.rel = "stylesheet";
+      document.head.appendChild(cssLink);
+    }
+  }
+
+  function loadDynamicJS() {
+    if (!document.querySelector('script[src*="index.js"]')) {
+      var jsLink = document.createElement("script");
+      jsLink.src = "index.js?v=" + Math.floor(Math.random() * 1000);
+      document.head.appendChild(jsLink);
+    }
+  }
+
+  // Cargar archivos CSS y JS dinámicamente
+  loadDynamicCSS();
+  loadDynamicJS();
 });
+
 function toggleLanguage() {
   const aboutText = document.getElementById("about-text");
   const skillsText = document.getElementById("skills-text");
@@ -94,13 +116,4 @@ function toggleLanguage() {
   }
 }
 
-// Cargar archivo CSS dinámicamente
-var cssLink = document.createElement("link");
-cssLink.href = "styles.css?v=" + Math.floor(Math.random() * 1000);
-cssLink.rel = "stylesheet";
-document.head.appendChild(cssLink);
 
-// Cargar archivo JavaScript dinámicamente
-var jsLink = document.createElement("script");
-jsLink.src = "index.js?v=" + Math.floor(Math.random() * 1000);
-document.head.appendChild(jsLink);
