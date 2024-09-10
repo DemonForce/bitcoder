@@ -76,10 +76,10 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(showTitles, 500);
 });
 function toggleLanguage() {
-  const aboutText = document.getElementById('about-text');
-  const skillsText = document.getElementById('skills-text');
-  const projectsText = document.getElementById('projects-text');
-  const contactText = document.getElementById('contact-text');
+  const aboutText = document.getElementById("about-text");
+  const skillsText = document.getElementById("skills-text");
+  const projectsText = document.getElementById("projects-text");
+  const contactText = document.getElementById("contact-text");
 
   if (aboutText.innerText === "About") {
     aboutText.innerText = "Sobre mí";
@@ -93,3 +93,14 @@ function toggleLanguage() {
     contactText.innerText = "Contact";
   }
 }
+
+// Cargar archivo CSS dinámicamente
+var cssLink = document.createElement("link");
+cssLink.href = "styles.css?v=" + Math.floor(Math.random() * 1000);
+cssLink.rel = "stylesheet";
+document.head.appendChild(cssLink);
+
+// Cargar archivo JavaScript dinámicamente
+var jsLink = document.createElement("script");
+jsLink.src = "index.js?v=" + Math.floor(Math.random() * 1000);
+document.head.appendChild(jsLink);
