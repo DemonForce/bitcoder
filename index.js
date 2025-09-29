@@ -103,17 +103,18 @@ function toggleLanguage() {
   const projectsText = document.getElementById("projects-text");
   const contactText = document.getElementById("contact-text");
 
-  if (aboutText.innerText === "About") {
-    aboutText.innerText = "Sobre mí";
-    skillsText.innerText = "Habilidades";
-    projectsText.innerText = "Proyectos";
-    contactText.innerText = "Contacto";
+  if (aboutText.innerText.includes("About")) {
+    aboutText.innerHTML = '<i class="fa fa-caret-right" aria-hidden="true"></i>Sobre mí';
+    skillsText.innerHTML = '<i class="fa fa-caret-right" aria-hidden="true"></i>Habilidades';
+    projectsText.innerHTML = '<i class="fa fa-caret-right" aria-hidden="true"></i>Proyectos';
+    contactText.innerHTML = '<i class="fa fa-caret-right" aria-hidden="true"></i>Contacto';
   } else {
-    aboutText.innerText = "About";
-    skillsText.innerText = "Skills";
-    projectsText.innerText = "Projects";
-    contactText.innerText = "Contact";
+    aboutText.innerHTML = '<i class="fa fa-caret-right" aria-hidden="true"></i>About';
+    skillsText.innerHTML = '<i class="fa fa-caret-right" aria-hidden="true"></i>Skills';
+    projectsText.innerHTML = '<i class="fa fa-caret-right" aria-hidden="true"></i>Projects';
+    contactText.innerHTML = '<i class="fa fa-caret-right" aria-hidden="true"></i>Contact';
   }
 }
+
 
 
