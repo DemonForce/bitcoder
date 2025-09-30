@@ -98,20 +98,48 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function toggleLanguage() {
+  const idioma = document.getElementById("languageToggle");
   const aboutText = document.getElementById("about-text");
   const skillsText = document.getElementById("skills-text");
   const projectsText = document.getElementById("projects-text");
   const contactText = document.getElementById("contact-text");
 
   if (aboutText.innerText === "About") {
+    idioma.innerText = "ES->EN";
     aboutText.innerText = "Sobre mí";
-    skillsText.innerText = "Habilidades";
+    skillsText.innerText = "Habilidad";
     projectsText.innerText = "Proyectos";
     contactText.innerText = "Contacto";
   } else {
+    idioma.innerText = "EN->ES";
     aboutText.innerText = "About";
-    skillsText.innerText = "Skills";
+    skillsText.innerText = "Skill";
     projectsText.innerText = "Projects";
     contactText.innerText = "Contact";
   }
 }
+
+const audio = document.getElementById("miAudio");
+const slider = document.getElementById("controlVolumen");
+
+// Inicia en silencio
+audio.volume = 0;
+
+slider.addEventListener("input", () => {
+  const nivel = slider.value / 100;
+  audio.volume = nivel;
+
+  if (nivel > 0 && audio.paused) {
+    audio.play();
+  }
+  if (nivel === 0 && !audio.paused) {
+    audio.pause();
+  }
+});
+
+audio.addEventListener("ended", () => {
+  if (audio.volume > 0) {
+    audio.currentTime = 0;
+    audio.play();
+  }
+});
