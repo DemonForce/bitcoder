@@ -289,7 +289,7 @@ i {
   }
 
   .binary-title {
-    font-size: 7vw;
+    font-size: 6vw;
   }
 
   #bit3 {
@@ -473,3 +473,4 @@ input[type="range"] {
   image-rendering: pixelated;
   cursor: pointer;
 }
+
