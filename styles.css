@@ -368,7 +368,7 @@ i {
   #guy,
   #guy2 {
     width: 50px;
-    bottom: 20vw;
+    bottom: 20.5vw;
     right: 11vw;
   }
 
@@ -473,6 +473,7 @@ input[type="range"] {
   image-rendering: pixelated;
   cursor: pointer;
 }
+
 
 
 
