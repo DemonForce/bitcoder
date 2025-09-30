@@ -310,7 +310,7 @@ i {
   }
 
   footer {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .selectors {
@@ -345,7 +345,7 @@ i {
   #nave {
     width: 20vw;
     height: 12vh;
-    margin-top: 25vh;
+    margin-top: 26vh;
     left: 8vw;
   }
 }
@@ -361,14 +361,14 @@ i {
 
   #building {
     width: 220px;
-    bottom: -2vw;
+    bottom: -3vw;
     right: 1vw;
   }
 
   #guy,
   #guy2 {
     width: 50px;
-    bottom: 22vw;
+    bottom: 21vw;
     right: 11vw;
   }
 
@@ -422,7 +422,7 @@ i {
   background-color: transparent;
   color: #fff;
   border: 1px solid #44da31;
-  padding: 8px 12px;
+  padding: 4px 8px;
   font-size: 0.55rem;
   cursor: pointer;
   border-radius: 3px;
