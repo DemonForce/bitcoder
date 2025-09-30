@@ -361,14 +361,14 @@ i {
 
   #building {
     width: 220px;
-    bottom: -3vw;
+    bottom: -4vw;
     right: 1vw;
   }
 
   #guy,
   #guy2 {
     width: 50px;
-    bottom: 21vw;
+    bottom: 20vw;
     right: 11vw;
   }
 
@@ -422,12 +422,11 @@ i {
   background-color: transparent;
   color: #fff;
   border: 1px solid #44da31;
-  padding: 4px 8px;
-  font-size: 0.55rem;
+  padding: 7px 7px;
+  font-size: 9px;
   cursor: pointer;
   border-radius: 3px;
   transition: background-color 0.5s ease, color 0.5s ease;
-  /* Transición para el cambio suave */
   font-family: "Press Start 2P";
 }
 
