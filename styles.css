@@ -449,7 +449,7 @@ i {
 }
 
 input[type="range"] {
-  width: 80px;
+  width: 150px;
 }
 
 /* Estilo del slider en modo pixel-art */
@@ -473,3 +473,4 @@ input[type="range"] {
   image-rendering: pixelated;
   cursor: pointer;
 }
+
