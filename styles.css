@@ -20,6 +20,10 @@ body {
   overflow: hidden;
   background-position: center center;
   background-repeat: no-repeat;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 header {
@@ -50,7 +54,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Centrar el contenido verticalmente */
+  justify-content: center;
+  /* Centrar el contenido verticalmente */
   padding: 20px;
 }
 
@@ -75,8 +80,10 @@ main {
 
 .center-column {
   display: flex;
-  justify-content: center; /* Centrar el contenido horizontalmente */
-  align-items: center; /* Centrar el contenido verticalmente */
+  justify-content: center;
+  /* Centrar el contenido horizontalmente */
+  align-items: center;
+  /* Centrar el contenido verticalmente */
 }
 
 footer {
@@ -94,7 +101,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .binary-title {
@@ -108,10 +115,21 @@ footer {
 
 /* Animación de parpadeo para los títulos */
 @keyframes neonFlicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
     text-shadow: 0 0 2px yellow, 0 0 4px yellow, 0 0 5px yellow, 0 0 6px yellow;
   }
-  20%, 24%, 55% {
+
+  20%,
+  24%,
+  55% {
     text-shadow: none;
   }
 }
@@ -130,7 +148,7 @@ footer {
   font-size: 1.5vw;
 }
 
-.littleAdam {
+.guy {
   position: fixed;
   bottom: 1vw;
   right: 1vw;
@@ -143,10 +161,16 @@ footer {
   bottom: -1vw;
   right: 1vw;
   z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
 }
 
-#littleAdam,
-#littleAdam2 {
+#guy,
+#guy2 {
   width: 6vw;
   position: absolute;
   bottom: 23vw;
@@ -155,7 +179,7 @@ footer {
 }
 
 
-#littleAdam2 {
+#guy2 {
   animation: wind 0.5s cubic-bezier(1, 0.5, 0.5, 1) infinite;
 }
 
@@ -171,12 +195,15 @@ footer {
 
 .selectors {
   display: flex;
-  flex-direction: column-reverse; /* Alinea de arriba hacia abajo */
-  justify-content: center; /* Centrar el contenido verticalmente */
-  align-items: left; /* Centrar el contenido horizontalmente */
+  flex-direction: column-reverse;
+  /* Alinea de arriba hacia abajo */
+  justify-content: center;
+  /* Centrar el contenido verticalmente */
+  align-items: left;
+  /* Centrar el contenido horizontalmente */
   width: 100%;
   height: 100%;
-  font-size: 2vw;
+  font-size: 1.8vw;
   z-index: 50;
 }
 
@@ -184,26 +211,28 @@ footer {
 .skills,
 .projects,
 .contact {
-  margin: 1.7vw 7.5vw; /* Reducir el margen entre los elementos */
-  width: auto; /* Ajustar el ancho según el contenido */
+  margin: 1.7vw 7.5vw;
+  /* Reducir el margen entre los elementos */
+  width: auto;
+  /* Ajustar el ancho según el contenido */
   color: white;
   font-family: "Press Start 2P";
   text-align: left;
   text-shadow:
-  -1.5px -1.5px 0 black,
-  1.5px -1.5px 0 black,
-  -1.5px 1.5px 0 black,
-  1.5px 1.5px 0 black;
+    -1.5px -1.5px 0 black,
+    1.5px -1.5px 0 black,
+    -1.5px 1.5px 0 black,
+    1.5px 1.5px 0 black;
 }
 
 i {
   margin-right: 1px;
   color: transparent;
   text-shadow:
-  -1.5px -1.5px 0 transparent,
-  1.5px -1.5px 0 transparent,
-  -1.5px 1.5px 0 transparent,
-  1.5px 1.5px 0 transparent;
+    -1.5px -1.5px 0 transparent,
+    1.5px -1.5px 0 transparent,
+    -1.5px 1.5px 0 transparent,
+    1.5px 1.5px 0 transparent;
 }
 
 .about:hover>p,
@@ -213,11 +242,6 @@ i {
   font-weight: bold;
   color: #ae00ff;
   cursor: pointer;
-  /* text-shadow:
-  -1.5px -1.5px 0 yellow,
-  1.5px -1.5px 0 yellow,
-  -1.5px 1.5px 0 yellow,
-  1.5px 1.5px 0 yellow; */
   animation: neonFlicker 4s infinite alternate;
 }
 
@@ -233,13 +257,15 @@ i {
 
 @keyframes levitar {
   0% {
-      top: 0;
+    top: 0;
   }
+
   50% {
-      top: -1.5vw;
+    top: -1.5vw;
   }
+
   100% {
-      top: 0;
+    top: 0;
   }
 }
 
@@ -276,8 +302,8 @@ i {
     right: 1vw;
   }
 
-  #littleAdam,
-  #littleAdam2 {
+  #guy,
+  #guy2 {
     width: 21vw;
     bottom: 76vw;
     right: 35vw;
@@ -297,15 +323,17 @@ i {
     width: 110%;
     padding: 10px;
   }
-  
+
   .about,
   .skills,
   .projects,
   .contact {
-    margin: 1vh 0.5vh; /* Reducir el margen entre los elementos */
-    width: 150%; /* Ajustar el ancho según el contenido */
+    margin: 1vh 0.5vh;
+    /* Reducir el margen entre los elementos */
+    width: 150%;
+    /* Ajustar el ancho según el contenido */
   }
-    
+
   .about:hover>p>i,
   .skills:hover>p>i,
   .projects:hover>p>i,
@@ -337,8 +365,8 @@ i {
     right: 1vw;
   }
 
-  #littleAdam,
-  #littleAdam2 {
+  #guy,
+  #guy2 {
     width: 50px;
     bottom: 23vw;
     right: 11vw;
@@ -353,15 +381,17 @@ i {
     margin-top: -15vh;
     margin-left: 5vw;
   }
-  
+
   .about,
   .skills,
   .projects,
   .contact {
-    margin: 1vh 0.5vh; /* Reducir el margen entre los elementos */
-    width: 150%; /* Ajustar el ancho según el contenido */
+    margin: 1vh 0.5vh;
+    /* Reducir el margen entre los elementos */
+    width: 150%;
+    /* Ajustar el ancho según el contenido */
   }
-    
+
   .about:hover>p>i,
   .skills:hover>p>i,
   .projects:hover>p>i,
@@ -383,7 +413,8 @@ i {
 
 /* Estilos al hacer hover */
 .bg-show:hover {
-  background-color: rgba(0, 255, 0, 0.2); /* Cambia a un fondo verde transparente (ajústalo según tu necesidad) */
+  background-color: rgba(0, 255, 0, 0.2);
+  /* Cambia a un fondo verde transparente (ajústalo según tu necesidad) */
 }
 
 /* Estilo base del botón */
@@ -392,10 +423,11 @@ i {
   color: #fff;
   border: 1px solid #44da31;
   padding: 8px 12px;
-  font-size: 0.5rem;
+  font-size: 0.55rem;
   cursor: pointer;
   border-radius: 3px;
-  transition: background-color 0.5s ease, color 0.5s ease; /* Transición para el cambio suave */
+  transition: background-color 0.5s ease, color 0.5s ease;
+  /* Transición para el cambio suave */
   font-family: "Press Start 2P";
 }
 
@@ -411,7 +443,34 @@ i {
   0% {
     background-color: transparent;
   }
+
   100% {
     background-color: #44da31;
   }
+}
+
+input[type="range"] {
+  width: 80px;
+}
+
+/* Estilo del slider en modo pixel-art */
+#controlVolumen {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 17px;
+  background: none;
+  border: 1px solid #44da31;
+  image-rendering: pixelated;
+}
+
+/* Botón pixelado */
+#controlVolumen::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  background: #44da31;
+  /* border: 1px solid #fff; */
+  image-rendering: pixelated;
+  cursor: pointer;
 }
