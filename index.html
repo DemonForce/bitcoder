@@ -1,100 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BITCODER</title>
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
-      rel="stylesheet"
-    />
-    <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#"></a></li>
-        </ul>
-        <div style="position: absolute; top: 5px; right: 5px;">
-          <button id="languageToggle" onclick="toggleLanguage()">EN/ES</button>
-        </div>
-      </nav>
-    </header>
 
-    <main id="main-content">
-      <div class="title-section">
-        <div id="bit" class="binary-title">BITCODER</div>
-        <div id="bit3" class="binary-title">FULL STACK</div>
-        <div id="bit2" class="binary-title">DEVELOPER</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GravitonBytes</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#"></a></li>
+      </ul>
+      <div style="position: absolute; top: 5px; right: 5px;">
+        <audio id="miAudio" src="cancion.mp3" preload="auto"></audio>
+        -<input type="range" id="controlVolumen" min="0" max="100" value="0">+
+        <button id="languageToggle" onclick="toggleLanguage()">ES->EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="title-section">
+      <div id="bit" class="binary-title">GravitonBytes</div>
+      <div id="bit3" class="binary-title">FULL STACK</div>
+      <div id="bit2" class="binary-title">Developer</div>
+    </div>
+
+    <div class="grid-section">
+      <div class="left-column">
+        <img id="nave" src="nave.gif" alt="Nave animada" />
       </div>
 
-      <div class="grid-section">
-        <div class="left-column">
-          <img id="nave" src="nave.gif" alt="Nave animada" />
-        </div>
-
-        <div class="center-column">
-          <div class="selectors">
-            <div class="fondo">
-              <div class="about" onclick="return false;">
-                <p id="about-text">
-                  <i class="fa fa-caret-right" aria-hidden="true"></i>About
-                </p>
-              </div>
-              <div class="skills" onclick="return false;">
-                <p id="skills-text">
-                  <i class="fa fa-caret-right" aria-hidden="true"></i>Skills
-                </p>
-              </div>
-              <div class="projects" onclick="return false;">
-                <p id="projects-text">
-                  <i class="fa fa-caret-right" aria-hidden="true"></i>Projects
-                </p>
-              </div>
-              <div class="contact" onclick="return false;">
-                <p id="contact-text">
-                  <i class="fa fa-caret-right" aria-hidden="true"></i>Contact
-                </p>
-              </div>
+      <div class="center-column">
+        <div class="selectors">
+          <div class="fondo">
+            <div class="about" onclick="return false;">
+              <p id="about-text">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>Sobre mí
+              </p>
+            </div>
+            <div class="skills" onclick="return false;">
+              <p id="skills-text">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>Habilidad
+              </p>
+            </div>
+            <div class="projects" onclick="return false;">
+              <p id="projects-text">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>Proyectos
+              </p>
+            </div>
+            <div class="contact" onclick="return false;">
+              <p id="contact-text">
+                <i class="fa fa-caret-right" aria-hidden="true"></i>Contacto
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="right-column">
-          <div class="littleAdam">
-            <img
-              id="building"
-              src="http://res.cloudinary.com/adamlancon/image/upload/v1506374679/untitled_8_ytd0ph.svg"
-              alt="Edificio animado"
-            />
-            <img
-              id="littleAdam"
-              src="http://res.cloudinary.com/adamlancon/image/upload/v1506365854/untitled_6_ubbrnf.svg"
-              alt="Personaje animado"
-            />
-            <img
-              id="littleAdam2"
-              src="http://res.cloudinary.com/adamlancon/image/upload/v1506368157/untitled_7_um0bkp.svg"
-              alt="Personaje animado 2"
-            />
-          </div>
+      <div class="right-column">
+        <div class="guy">
+          <img id="building" src="building.svg" alt="Edificio animado" />
+          <img id="guy" src="guy.svg" alt="Personaje animado" />
+          <img id="guy2" src="guy2.svg" alt="Personaje animado 2" />
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer>
-      <p>&copy; BITCODER 2025</p>
-    </footer>
+  <footer>
+    <p>&copy; GravitonBytes 2025</p>
+  </footer>
 
-    <!-- Archivo JavaScript -->
-    <script src="index.js"></script>
-  </body>
+  <!-- Archivo JavaScript -->
+  <script src="index.js"></script>
+</body>
+
 </html>
