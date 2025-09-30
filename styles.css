@@ -289,11 +289,11 @@ i {
   }
 
    .binary-title {
-    font-size: 20px !important;
+    font-size: 25px !important;
   }
 
   #bit3 {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   #building {
@@ -473,4 +473,5 @@ input[type="range"] {
   image-rendering: pixelated;
   cursor: pointer;
 }
+
 
