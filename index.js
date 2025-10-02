@@ -121,25 +121,48 @@ function toggleLanguage() {
 
 const audio = document.getElementById("miAudio");
 const slider = document.getElementById("controlVolumen");
+const toggle = document.getElementById("audioToggle");
 
-// Inicia en silencio
+// iniciar en silencio
 audio.volume = 0;
+toggle.textContent = "♪";
 
-slider.addEventListener("input", () => {
-  const nivel = slider.value / 100;
-  audio.volume = nivel;
+// función para actualizar estado del botón
+function updateButtonState(isPlaying) {
+  toggle.classList.toggle("active", isPlaying);
+  toggle.textContent = "♪";
+  toggle.setAttribute("aria-label", isPlaying ? "Pausar música" : "Activar música");
+}
 
-  if (nivel > 0 && audio.paused) {
-    audio.play();
-  }
-  if (nivel === 0 && !audio.paused) {
+// click en el botón
+toggle.addEventListener("click", async () => {
+  if (audio.paused || audio.volume === 0) {
+    if (audio.volume === 0) audio.volume = 0.6;
+    slider.value = Math.round(audio.volume * 100);
+    try { await audio.play(); } catch (err) { console.error(err); }
+    updateButtonState(true);
+  } else {
     audio.pause();
+    updateButtonState(false);
   }
 });
 
+// sincronizar con slider
+slider.addEventListener("input", () => {
+  audio.volume = slider.value / 100;
+  if (audio.volume === 0) {
+    audio.pause();
+    updateButtonState(false);
+  } else {
+    if (audio.paused) audio.play().catch(() => {});
+    updateButtonState(true);
+  }
+});
+
+// loop infinito
 audio.addEventListener("ended", () => {
   if (audio.volume > 0) {
     audio.currentTime = 0;
-    audio.play();
+    audio.play().catch(() => {});
   }
 });
