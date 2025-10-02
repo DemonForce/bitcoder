@@ -14,17 +14,24 @@
 </head>
 
 <body>
+  <!-- 🎇 Fondo animado de estrellas y meteoros -->
+  <canvas id="space"></canvas>
+
   <header>
     <nav>
       <ul>
         <li><a href="#"></a></li>
       </ul>
-      <div style="position: absolute; top: 3px; right: 3px;">
+      <div style="position: absolute; top: 1px; right: 5px;">
         <audio id="miAudio" src="cancion.mp3" preload="auto"></audio>
-        -<input type="range" id="controlVolumen" min="0" max="100" value="0">+
+
+        <!-- Botón de nota musical -->
+        <button id="audioToggle" class="pixel-btn" aria-pressed="false" aria-label="Activar música">♪</button>
+
+        <input type="range" id="controlVolumen" min="0" max="100" value="0">
         <button id="languageToggle" onclick="toggleLanguage()">ES->EN</button>
       </div>
-    </nav>
+
   </header>
 
   <main id="main-content">
@@ -80,8 +87,9 @@
     <p>&copy; GravitonByte 2025</p>
   </footer>
 
-  <!-- Archivo JavaScript -->
+  <!-- Archivos JavaScript -->
   <script src="index.js"></script>
+  <script src="space.js"></script>
 </body>
 
 </html>
